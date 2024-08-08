@@ -16,9 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('rekap');
-});
 
 Route::get('/barang', [BarangController::class, 'index'])->name('barang.index');
 Route::get('/barang/create', [BarangController::class, 'create'])->name('barang.create');
@@ -34,6 +31,7 @@ Route::get('/customer/edit/{id}', [CustomerController::class, 'edit'])->name('cu
 Route::patch('/customer/update/{id}', [CustomerController::class, 'update'])->name('customer.update');
 Route::delete('/customer/destroy/{id}', [CustomerController::class, 'destroy'])->name('customer.destroy');
 
+Route::get('/', [TransactionController::class, 'index']);
 Route::get('/transaction', [TransactionController::class, 'index'])->name('transaction.index');
 Route::get('/transaction/create', [TransactionController::class, 'create'])->name('transaction.create');
 Route::post('/transaction/store', [TransactionController::class, 'store'])->name('transaction.store');
