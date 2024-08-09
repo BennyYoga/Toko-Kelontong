@@ -13,7 +13,7 @@
         "APP_NAME": "Laravel",
         "APP_ENV": "development",
         "APP_KEY": "base64:oV+LxosSGQ8EFwKZJM6k1CKJiq/7AOmqM4L5Z7l6Rlo=",
-        "APP_DEBUG": true,
+        "APP_DEBUG": "true",
         "APP_URL": "https://localhost",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
